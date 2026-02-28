@@ -1,0 +1,43 @@
+{
+    "name": "prashant-malla/laravel-auto-toc",
+    "description": "Automatically generate a Table of Contents from rich text editor HTML content in Laravel.",
+    "keywords": [
+        "laravel",
+        "table-of-contents",
+        "toc",
+        "headings",
+        "ckeditor",
+        "rich-text"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prashant Malla",
+            "homepage": "https://github.com/prashant-malla"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PrashantMalla\\AutoToc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PrashantMalla\\AutoToc\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PrashantMalla\\AutoToc\\AutoTocServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
